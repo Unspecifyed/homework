@@ -26,4 +26,6 @@ string blocks(int i){
 string edge (int i){
     i = i-1;
     string builder ="#";
+    if(i==0) return builder;
+    
 }
