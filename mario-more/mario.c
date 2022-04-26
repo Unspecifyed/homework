@@ -25,5 +25,5 @@ string blocks(int i){
 
 string edge (int i){
     i = i-1;
-    string builder
+    string builder ="#";
 }
