@@ -22,7 +22,8 @@ int size(void)
 
 string edge (int i, string builder)
 {
-    char[i] cut{} = builder;
+    char[i] cut ={};
+    cut=builder;
 
     return cut;
 
