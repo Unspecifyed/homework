@@ -27,7 +27,7 @@ string blocks(int i){
 
 string edge (int i, string builder){
     i = i-1;
-    builder = strgcat(builder,"#");
+    builder = strncat(builder,"#");
     if(i==0) return builder;
     edge(i,builder);
     return builder;
