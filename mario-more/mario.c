@@ -3,7 +3,8 @@
 
 int main(void)
 {
-    int size =size();
+    int size =1;
+    size = size();
 
 }
 
