@@ -1,9 +1,10 @@
 #include <cs50.h>
 #include <stdio.h>
-
+int size (void);
 int main(void)
 {
     int high= size();
+    printf("%d",high);
 
 }
 
