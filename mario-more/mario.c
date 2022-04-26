@@ -3,6 +3,9 @@
 
 int main(void)
 {
-    int size = get_int("input a number 1-8");
 
+}
+
+int size(void){
+    
 }
