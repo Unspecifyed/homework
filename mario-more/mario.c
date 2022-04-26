@@ -4,7 +4,7 @@ int size (void);
 int main(void)
 {
     int high= size();
-    printf("%d",high);
+    printf("%s",high);
 
 }
 
