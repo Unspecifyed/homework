@@ -3,8 +3,8 @@
 
 int main(void)
 {
-    int size =1;
-    size = size();
+    int high=1;
+    high= size();
 
 }
 
