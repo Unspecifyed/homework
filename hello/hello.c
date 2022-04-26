@@ -1,4 +1,4 @@
-#include <stio.h>
+#include <stdio.h>
 int main(void)
 {
     printf("hello, wold\n");
