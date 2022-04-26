@@ -6,7 +6,7 @@ string edge (int i, string builder);
 int main(void)
 {
     int high= size();
-    string baz = edge();
+    string baz = edge(high,"#");
     printf("%i %s",high, baz);
 
 }
