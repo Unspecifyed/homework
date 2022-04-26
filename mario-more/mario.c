@@ -6,7 +6,8 @@ string edge (int i, string builder);
 int main(void)
 {
     int high= size();
-    printf("%i",high);
+    string baz = edge();
+    printf("%i %s",high, baz);
 
 }
 // Gets the size of the "blocks"
