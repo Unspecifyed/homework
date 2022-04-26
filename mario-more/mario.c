@@ -11,7 +11,8 @@ int main(void)
 
 }
 // Gets the size of the "blocks"
-int size(void){
+int size(void)
+{
     int stacks = get_int("input a number 1-8: \n");
     if(stacks>0&&stacks<9) return stacks;
     printf("not valid input\n");
@@ -19,13 +20,15 @@ int size(void){
     return stacks;
 }
 
-string blocks(int i){
+string blocks(int i)
+{
     i= i-1;
     return "lol";
 
 }
 
-string edge (int i, string builder){
+string edge (int i, string builder)
+{
     i = i-1;
     builder = strncat(builder,"#");
     if(i==0) return builder;
