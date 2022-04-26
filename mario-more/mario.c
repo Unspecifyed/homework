@@ -1,12 +1,12 @@
 #include <cs50.h>
 #include <stdio.h>
 int size (void);
-string blocks (int i);
 string edge (int i, string builder);
 int main(void)
 {
     int high= size();
     string hashz= "########";
+    printf("%s",edge(high,hashz));
 
 }
 // Gets the size of the "blocks"
@@ -19,16 +19,11 @@ int size(void)
     return stacks;
 }
 
-string blocks(int i)
-{
-    i= i-1;
-    return "lol";
-
-}
 
 string edge (int i, string builder)
 {
+    char[i] cut{} = builder;
 
-    return builder;
+    return cut;
 
 }
