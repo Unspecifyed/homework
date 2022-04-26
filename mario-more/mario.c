@@ -21,7 +21,7 @@ int size(void){
 
 string blocks(int i){
     i= i-1;
-    return i;
+    return "lol";
 
 }
 
