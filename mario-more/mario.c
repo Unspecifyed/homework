@@ -2,6 +2,7 @@
 #include <stdio.h>
 int size (void);
 string blocks (int i);
+string edge (int i);
 int main(void)
 {
     int high= size();
@@ -19,5 +20,10 @@ int size(void){
 
 string blocks(int i){
     i= i-1;
-    
+
+}
+
+string edge (int i){
+    i = i-1;
+    string builder
 }
