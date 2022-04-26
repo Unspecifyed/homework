@@ -16,3 +16,8 @@ int size(void){
     size();
     return stacks;
 }
+
+string blocks(int i){
+    i= i-1;
+    
+}
