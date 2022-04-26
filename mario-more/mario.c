@@ -1,6 +1,5 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <string.h>
 int size (void);
 string blocks (int i);
 string edge (int i, string builder);
@@ -30,11 +29,7 @@ string blocks(int i)
 
 string edge (int i, string builder)
 {
-    i = i-1;
-    builder = strncat(builder,"#",strlen(builder)+1);
-    if(i==0) return builder;
-    printf("%s",builder);
-    edge(i,builder);
+    
     return builder;
 
 }
