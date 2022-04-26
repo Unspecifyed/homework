@@ -2,7 +2,7 @@
 #include <stdio.h>
 int size (void);
 string blocks (int i);
-string edge (int i);
+string edge (int i, string builder);
 int main(void)
 {
     int high= size();
@@ -23,9 +23,9 @@ string blocks(int i){
 
 }
 
-string edge (int i){
+string edge (int i, string builder){
     i = i-1;
-    string builder ="#";
+    strgcat(builder,"#");
     if(i==0) return builder;
-    
+
 }
