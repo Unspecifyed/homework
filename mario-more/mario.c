@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 int size (void);
-void edge (int iteration, char c);
+void edge (int iteration);
 void line (int n);
 void stack (int n, int total);
 int main(void)
@@ -20,10 +20,9 @@ int size(void)
     return stacks;
 }
 // Creates the edge of the blocks
-void edge (int iteration, char c)
+void edge (int iteration)
 {
     if(iteration==0) return;
-    if(c==' '&&iteration==1)return;
     iteration=iteration-1;
     printf("%c",c);
     edge(iteration,c);
@@ -39,7 +38,7 @@ void line(int n)
     printf("  ");
     edge(n,hash);
     edge(n,space);
-    printf("\n");
+    printf("\n)
 }
 void stack (int n, int total){
     n=n+1;
