@@ -47,5 +47,6 @@ void stack (int n, int total){
 }
 void whiteSpace(int n, int total)
 {
+    
     printf(" ");
 }
