@@ -2,7 +2,7 @@
 #include <stdio.h>
 int size (void);
 void edge (int iteration);
-void line (int n);
+void line (int n, int total);
 void stack (int n, int total);
 void whiteSpace(int n, int total);
 int main(void)
@@ -30,8 +30,9 @@ void edge (int iteration)
     return;
 }
 
-void line(int n)
+void line(int n, int total)
 {
+    whiteSpace(n,total);
     edge(n);
     printf("  ");
     edge(n);
@@ -43,4 +44,8 @@ void stack (int n, int total){
     if(n==total)return;
     stack(n,total);
     return;
+}
+void whiteSpace(int n, int total)
+{
+    
 }
