@@ -45,7 +45,7 @@ void edge (int iteration)
 //stacks the blocks
 void stacks(int iteration, int total)
 {
-    whiteSpace(iteration, total);
+    // whiteSpace(iteration, total);
     iteration = iteration+1;
     edge(iteration);// left side of blocks
     printf("  "); // space in the middle
