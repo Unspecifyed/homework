@@ -4,6 +4,7 @@ int size (void);
 void edge (int iteration);
 void line (int n);
 void stack (int n, int total);
+void whiteSpace(int n, int total);
 int main(void)
 {
     int high= size();// how high the blocks are
