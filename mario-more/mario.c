@@ -31,8 +31,6 @@ void edge (int iteration)
 
 void line(int n)
 {
-    char hash='#';
-    char space=' ';
     edge(n);
     printf("  ");
     edge(n);
