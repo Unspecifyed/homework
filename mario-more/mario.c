@@ -8,6 +8,7 @@ int main(void)
     char hash='#';
     char space=' ';
     edge(high,space);
+    edge(high,hash);
     return 0;
 }
 // Gets the size of the "blocks"
@@ -22,9 +23,9 @@ int size(void)
 // Creates the edge of the blocks
 void edge (int iteration, char c)
 {
+    if(iteration==0) return;
     iteration=iteration-1;
     printf(c);
-    if(iteration==0) return;
     edge(iteration);
     return;
 }
