@@ -4,7 +4,8 @@ int size (void);
 void edge (int iteration);
 int main(void)
 {
-    int high= size();
+    int high= size();// how high the blocks are
+    edge(high);
 
 }
 // Gets the size of the "blocks"
@@ -17,7 +18,7 @@ int size(void)
     return stacks;
 }
 
-
+// Creates the edge of the blocks
 void edge (int iteration)
 {
     iteration=iteration-1;
