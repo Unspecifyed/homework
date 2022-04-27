@@ -2,6 +2,7 @@
 #include <stdio.h>
 int size (void);
 void edge (int iteration, char c);
+void line (int n);
 int main(void)
 {
     int high= size();// how high the blocks are
