@@ -5,5 +5,6 @@
 
 int main(void)
 {
+    int size = get_int("Size: ");
 
 }
