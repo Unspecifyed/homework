@@ -48,7 +48,7 @@ void stacks(int iteration, int total)
     iteration = iteration+1;
    // whiteSpace(iteration);
     edge(iteration);// left side of blocks
-    printf(" "); // space in the middle
+    printf("  "); // space in the middle
     edge(iteration); //rightside
     printf("\n");
     if(iteration==total) return;
