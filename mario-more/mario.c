@@ -25,7 +25,8 @@ int size(void)
 void whiteSpace(int iteration){
     iteration=8-iteration;
     printf(" ");
-    
+    if(iteration==0); return;
+
 
 }
 
