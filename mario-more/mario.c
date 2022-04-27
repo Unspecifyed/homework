@@ -50,7 +50,7 @@ void stacks(int iteration, int total)
     edge(iteration," ");// left side of blocks
     edge(iteration,"#");// left side of blocks
     printf("  "); // space in the middle
-    edge(iteration); //rightside
+    edge(iteration,"#"); //rightside
  //   whiteSpace(iteration, total);
     printf("\n");
   //  whiteSpace(iteration, total);
