@@ -6,11 +6,8 @@ void line (int n);
 int main(void)
 {
     int high= size();// how high the blocks are
-    char hash='#';
-    char space=' ';
-    edge(high,space);
-    edge(high,hash);
-    return 0;
+    line(high);
+        return 0;
 }
 // Gets the size of the "blocks"
 int size(void)
@@ -34,5 +31,11 @@ void edge (int iteration, char c)
 
 void line(int n)
 {
-
+    char hash='#';
+    char space=' ';
+    edge(high,space);
+    edge(high,hash);
+    printf("  ");
+    edge(high,hash);
+    edge(high,space);
 }
