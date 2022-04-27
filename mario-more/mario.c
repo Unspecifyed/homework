@@ -3,7 +3,7 @@
 int size (void);
 void whiteSpace(int iteration, int total);
 void edge (int iteration);
-void stacks(int iteration, int total);
+// void stacks(int iteration, int total);
 int main(void)
 {
     int high= size();// how high the blocks are
@@ -22,15 +22,15 @@ int size(void)
 }
 
 //creates whitespace to allign the center
-void whiteSpace(int iteration, int total){
-    iteration=iteration-1;
-    if(iteration==0)return;
-    printf(" ");
-    whiteSpace(iteration, total);
-    return;
+//void whiteSpace(int iteration, int total){
+ //   iteration=iteration-1;
+  //  if(iteration==0)return;
+   // printf(" ");
+   // whiteSpace(iteration, total);
+   // return;
 
 
-}
+//}
 
 // Creates the edge of the blocks
 void edge (int iteration)
@@ -50,9 +50,9 @@ void stacks(int iteration, int total)
     edge(iteration);// left side of blocks
     printf("  "); // space in the middle
     edge(iteration); //rightside
-    whiteSpace(iteration, total);
+ //   whiteSpace(iteration, total);
     printf("\n");
-    whiteSpace(iteration, total);
+  //  whiteSpace(iteration, total);
     if(iteration==total) return;
     stacks(iteration, total);
     return;
