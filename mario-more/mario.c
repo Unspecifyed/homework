@@ -27,7 +27,7 @@ void edge (int iteration, char c)
     if(c==' '&&iteration==1)return;
     iteration=iteration-1;
     printf("%c",c);
-    edge(iteration);
+    edge(iteration,c);
     return;
 }
 
