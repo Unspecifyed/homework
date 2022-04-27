@@ -33,9 +33,9 @@ void line(int n)
 {
     char hash='#';
     char space=' ';
-    edge(high,space);
-    edge(high,hash);
+    edge(n,space);
+    edge(n,hash);
     printf("  ");
-    edge(high,hash);
-    edge(high,space);
+    edge(n,hash);
+    edge(n,space);
 }
