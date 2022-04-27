@@ -23,8 +23,8 @@ int size(void)
 
 //creates whitespace to allign the center
 void whiteSpace(int iteration, int total){
-    iteration=iteration-1
-    if(tota) return;
+    iteration=iteration-1;
+    if(iteration==0) return;
     printf(" ");
     whiteSpace(iteration, total);
     return;
@@ -46,7 +46,7 @@ void edge (int iteration)
 void stacks(int iteration, int total)
 {
     iteration = iteration+1;
-    whiteSpace(total, total);
+    whiteSpace(iteration -total, total);
     edge(iteration);// left side of blocks
     printf("  "); // space in the middle
     edge(iteration); //rightside
