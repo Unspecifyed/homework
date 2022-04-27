@@ -23,7 +23,9 @@ int size(void)
 
 //creates whitespace to allign the center
 void whiteSpace(int iteration){
+    iteration=8-iteration;
     
+
 }
 
 // Creates the edge of the blocks
