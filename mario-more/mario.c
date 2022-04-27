@@ -32,3 +32,7 @@ void edge (int iteration, char c)
     return;
 }
 
+void line(int n)
+{
+
+}
