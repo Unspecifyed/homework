@@ -3,11 +3,12 @@
 int size (void);
 void edge (int iteration, char c);
 void line (int n);
+void stack (int n, int total);
 int main(void)
 {
     int high= size();// how high the blocks are
-    line(high);
-        return 0;
+    stack(0,high);
+    return 0;
 }
 // Gets the size of the "blocks"
 int size(void)
@@ -38,4 +39,12 @@ void line(int n)
     printf("  ");
     edge(n,hash);
     edge(n,space);
+    printf("\n");
+}
+void stack (int n, int total){
+    n=n+1;
+    line(n);
+    if(n==total)return;
+    stack(n,total);
+    return;
 }
