@@ -2,7 +2,7 @@
 #include <stdio.h>
 int size (void);
 void whiteSpace(int iteration, int total);
-void edge (int iteration);
+void edge (int iteration, char c);
 // void stacks(int iteration, int total);
 int main(void)
 {
@@ -33,7 +33,7 @@ int size(void)
 //}
 
 // Creates the edge of the blocks
-void edge (int iteration)
+void edge (int iteration, char c)
 {
     iteration=iteration-1;
     printf("#");
@@ -47,7 +47,7 @@ void stacks(int iteration, int total)
 {
     // whiteSpace(iteration, total);
     iteration = iteration+1;
-    edge(iteration);// left side of blocks
+    edge(iteration,"#");// left side of blocks
     printf("  "); // space in the middle
     edge(iteration); //rightside
  //   whiteSpace(iteration, total);
