@@ -24,6 +24,7 @@ int size(void)
 void edge (int iteration, char c)
 {
     if(iteration==0) return;
+    if(c==' '&&iteration==1)return;
     iteration=iteration-1;
     printf(c);
     edge(iteration);
