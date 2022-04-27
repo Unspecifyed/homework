@@ -5,7 +5,9 @@ void edge (int iteration, char c);
 int main(void)
 {
     int high= size();// how high the blocks are
-    stacks(0,high);
+    char hash='#';
+    char space=' ';
+    edge(high);
     return 0;
 }
 // Gets the size of the "blocks"
