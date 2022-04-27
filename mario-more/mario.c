@@ -23,8 +23,8 @@ int size(void)
 
 //creates whitespace to allign the center
 void whiteSpace(int iteration, int total){
-    iteration=iteration+1;
     if(iteration==total) return;
+    iteration=iteration+1;
     printf(" ");
     whiteSpace(iteration, total);
     return;
