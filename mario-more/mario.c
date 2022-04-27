@@ -25,7 +25,7 @@ int size(void)
 void whiteSpace(int iteration){
     iteration=iteration+1;
     printf(" ");
-    if(iteration==8); return;
+    if(iteration==8) return;
     whiteSpace(iteration);
     return;
 
@@ -46,6 +46,7 @@ void edge (int iteration)
 void stacks(int iteration, int total)
 {
     iteration = iteration+1;
+    whiteSpace(iteration);
     edge(iteration);// left side of blocks
     printf(" "); // space in the middle
     edge(iteration); //rightside
