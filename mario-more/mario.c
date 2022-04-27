@@ -2,6 +2,7 @@
 #include <stdio.h>
 int size (void);
 void edge (int iteration);
+void stacks(int iteration, int total);
 int main(void)
 {
     int high= size();// how high the blocks are
@@ -26,7 +27,15 @@ void edge (int iteration)
     if(iteration==0) return;
     edge(iteration);
     return;
+}
 
-
-
+void stacks(int iteration, int total)
+{
+    iteration = iteration+1;
+    edge(iteration);// left side of blocks
+    printf(" "); // space in the middle
+    edge(iteration); //rightside
+    printf("\n");
+    if(iteration==total) return;
+    
 }
