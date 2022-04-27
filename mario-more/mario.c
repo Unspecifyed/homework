@@ -26,7 +26,7 @@ void whiteSpace(int iteration, int total){
     iteration=iteration+1;
     if(iteration==total) return;
     printf(" ");
-    whiteSpace(iteration);
+    whiteSpace(iteration, total);
     return;
 
 
