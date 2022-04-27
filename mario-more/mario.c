@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 int size (void);
+void whiteSpace(int iteration);
 void edge (int iteration);
 void stacks(int iteration, int total);
 int main(void)
@@ -18,6 +19,11 @@ int size(void)
     printf("not valid input\n");
     size();
     return stacks;
+}
+
+//creates whitespace to allign the center
+void whiteSpace(int iteration){
+    
 }
 
 // Creates the edge of the blocks
