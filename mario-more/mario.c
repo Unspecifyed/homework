@@ -1,9 +1,9 @@
 #include <cs50.h>
 #include <stdio.h>
 int size (void);
-void whiteSpace(int iteration, int total);
+// void whiteSpace(int iteration, int total);
 void edge (int iteration, char c);
-// void stacks(int iteration, int total);
+void stacks(int iteration, int total);
 int main(void)
 {
     int high= size();// how high the blocks are
