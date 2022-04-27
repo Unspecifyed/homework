@@ -24,8 +24,8 @@ void edge (int iteration)
 {
     if(iteration==0) return;
     iteration=iteration-1;
-    printf("%c",c);
-    edge(iteration,c);
+    printf("#");
+    edge(iteration);
     return;
 }
 
@@ -33,12 +33,10 @@ void line(int n)
 {
     char hash='#';
     char space=' ';
-    edge(n,space);
-    edge(n,hash);
+    edge(n);
     printf("  ");
-    edge(n,hash);
-    edge(n,space);
-    printf("\n)
+    edge(n);
+    printf("\n");
 }
 void stack (int n, int total){
     n=n+1;
