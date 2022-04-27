@@ -45,13 +45,14 @@ void edge (int iteration)
 //stacks the blocks
 void stacks(int iteration, int total)
 {
-    whiteSpace(iteration, total);
+    // whiteSpace(iteration, total);
     iteration = iteration+1;
     edge(iteration);// left side of blocks
     printf("  "); // space in the middle
     edge(iteration); //rightside
     whiteSpace(iteration, total);
     printf("\n");
+    whiteSpace(iteration, total);
     if(iteration==total) return;
     stacks(iteration, total);
     return;
