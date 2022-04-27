@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 int size (void);
-void whiteSpace(int iteration);
+void whiteSpace(int iteration, int total);
 void edge (int iteration);
 void stacks(int iteration, int total);
 int main(void)
@@ -22,9 +22,9 @@ int size(void)
 }
 
 //creates whitespace to allign the center
-void whiteSpace(int iteration){
-    iteration=iteration-1;
-    if(iteration==0) return;
+void whiteSpace(int iteration, int total){
+    iteration=iteration+1;
+    if(iteration==total) return;
     printf(" ");
     whiteSpace(iteration);
     return;
@@ -46,7 +46,7 @@ void edge (int iteration)
 void stacks(int iteration, int total)
 {
     iteration = iteration+1;
-   // whiteSpace(iteration);
+   whiteSpace(iteration);
     edge(iteration);// left side of blocks
     printf("  "); // space in the middle
     edge(iteration); //rightside
