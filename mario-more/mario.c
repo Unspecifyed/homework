@@ -40,12 +40,12 @@ void line(int n, int total)
 }
 void stack (int n, int total){
     n=n+1;
-    line(n);
+    line(n,total);
     if(n==total)return;
     stack(n,total);
     return;
 }
 void whiteSpace(int n, int total)
 {
-    
+    printf(" ");
 }
