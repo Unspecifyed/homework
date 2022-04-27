@@ -7,7 +7,7 @@ int main(void)
     int high= size();// how high the blocks are
     char hash='#';
     char space=' ';
-    edge(high);
+    edge(high,space);
     return 0;
 }
 // Gets the size of the "blocks"
