@@ -28,7 +28,7 @@ void edge(int iteration)
     {
         return;
     }
-    iteration = iteration-1;
+    iteration = iteration - 1;
     printf("#");
     edge(iteration);
     return;
@@ -36,17 +36,20 @@ void edge(int iteration)
 // make the full line
 void line(int n, int total)
 {
-    whiteSpace(n,total);
+    whiteSpace(n, total);
     edge(n);
     printf("  ");
     edge(n);
     printf("\n");
 }
 //stacks the lines
-void stack (int n, int total){
-    n=n+1;
-    line(n,total);
-    if(n==total)return;
+void stack(int n, int total){
+    n = n + 1;
+    line(n, total);
+    if (n == total)
+    {
+        return;
+    {
     stack(n,total);
     return;
 }
