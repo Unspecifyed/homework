@@ -3,5 +3,5 @@
 
 int main(void)
 {
-    static long CREDIT_NUMBER= get_long("Number: ");
+    long CREDIT_NUMBER= get_long("Number: ");
 }
