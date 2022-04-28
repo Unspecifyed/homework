@@ -12,6 +12,7 @@ int main(void)
 int credit_number_digits(long n)
 {
     int digit = (int) log10(n);
+    digit = digit + 1;
     printf("%d", digit);
-    return digit;
+    return digit ;
 }
