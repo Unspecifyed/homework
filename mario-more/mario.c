@@ -14,8 +14,7 @@ int main(void)
 // Gets the size of the "blocks"
 int size(void)
 {
-    int stacks = 0;
-    stacks = get_int("input a number 1-8: \n");
+    int stacks = get_int("input a number 1-8: \n");
     if(stacks>0&&stacks<9) return stacks;
     size();
     return stacks;
