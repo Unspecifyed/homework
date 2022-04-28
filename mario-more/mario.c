@@ -16,6 +16,7 @@ int size(void)
 {
     int stacks = get_int("input a number 1-8: \n");
     if(stacks>0&&stacks<9) return stacks;
+    stacks=0;
     size();
     return stacks;
 }
