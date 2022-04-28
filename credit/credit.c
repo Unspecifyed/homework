@@ -40,5 +40,9 @@ int brand(int digit, int last)
     {
         return 1;
     }
-    
+    // MasterCard test
+    if(digit == 16 && (last > 50 && last < 56))
+    {
+        return 2;
+    }
 }
