@@ -15,7 +15,7 @@ int credit_number_digits(long n)
 {
     int digit = (int) log10(n);
     digit = digit + 1;
-    printf("digits %d \n", digit);
+    printf("digits: %d \n", digit);
     return digit ;
 }
 // Finds the last two numbers
@@ -23,7 +23,7 @@ int last_two(int n)
 {
     if(n < 100)
     {
-        printf("last two %d \n", n);
+        printf("last two: %d \n", n);
         return n;
     }
     n = n / 10;
