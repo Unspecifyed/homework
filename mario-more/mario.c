@@ -24,8 +24,8 @@ int size(void)
 // Creates the edge of the blocks
 void edge(int iteration)
 {
-    if (iteration==0)return;
-    iteration=iteration-1;
+    if (iteration == 0)return;
+    iteration = iteration-1;
     printf("#");
     edge(iteration);
     return;
