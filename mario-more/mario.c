@@ -15,8 +15,7 @@ int main(void)
 int size(void)
 {
     int stacks = get_int("input a number 1-8: \n");
-    if(stacks>0&&stacks<10) return stacks;
-    printf("not valid input\n");
+    if(stacks>0&&stacks<9) return stacks;
     size();
     return stacks;
 }
