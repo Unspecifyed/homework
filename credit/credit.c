@@ -35,5 +35,5 @@ int last_two(int n)
 // Finds the brand
 int brand(int digit, int last)
 {
-    
+    if(digit == 15 && ())
 }
