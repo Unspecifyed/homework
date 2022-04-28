@@ -45,4 +45,10 @@ int brand(int digit, int last)
     {
         return 2;
     }
+    // Visa test
+    if((digit == 13 || digit == 16) && (last > 39 && last < 50))
+    {
+        return 3;
+    }
+    return 0;
 }
