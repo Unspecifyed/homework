@@ -1,9 +1,9 @@
 #include <cs50.h>
 #include <stdio.h>
-int size (void);
-void edge (int iteration);
-void line (int n, int total);
-void stack (int n, int total);
+int size(void);
+void edge(int iteration);
+void line(int n, int total);
+void stack(int n, int total);
 void whiteSpace(int n, int total);
 int main(void)
 {
