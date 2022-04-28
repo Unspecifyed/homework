@@ -57,9 +57,12 @@ void stack(int n, int total)
 //makes the whitespace before the
 void whiteSpace(int n, int total)
 {
-    if(n==total)return;
-    n=n+1;
+    if (n == total)
+    {
+        return;
+    }
+    n = n + 1;
     printf(" ");
-    whiteSpace(n,total);
+    whiteSpace(n, total);
     return;
 }
