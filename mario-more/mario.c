@@ -47,10 +47,7 @@ void stack(int n, int total)
 {
     n = n + 1;
     line(n, total);
-    if (n == total)
-    {
-        return;
-    {
+    if (n == total)return;
     stack(n,total);
     return;
 }
