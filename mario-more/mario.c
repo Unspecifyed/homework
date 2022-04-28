@@ -43,7 +43,8 @@ void line(int n, int total)
     printf("\n");
 }
 //stacks the lines
-void stack(int n, int total){
+void stack(int n, int total)
+{
     n = n + 1;
     line(n, total);
     if (n == total)
