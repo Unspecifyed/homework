@@ -3,7 +3,7 @@
 #include <math.h>
 int credit_number_digits(long n);
 int last_two(int n);
-int brand(int d)
+int brand(int digit, int last);
 int main(void)
 {
     const long CREDIT_NUMBER = get_long("Number: ");
@@ -31,4 +31,9 @@ int last_two(int n)
     n = n / 10;
     last_two(n);
     return 0;
+}
+// Finds the brand
+int brand(int digit, int last)
+{
+    
 }
