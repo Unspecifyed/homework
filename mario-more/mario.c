@@ -14,11 +14,9 @@ int main(void)
 // Gets the size of the "blocks"
 int size(void)
 {
-    while(true)
-    {
     int stacks = get_int("input a number 1-8: \n");
     if(stacks>0&&stacks<9) return stacks;
-    }
+    size();
     return stacks;
 }
 // Creates the edge of the blocks
@@ -47,7 +45,7 @@ void stack (int n, int total){
     stack(n,total);
     return;
 }
-//makes the whitespace before the blocks
+//makes the whitespace before the
 void whiteSpace(int n, int total)
 {
     if(n==total)return;
