@@ -16,7 +16,6 @@ int size(void)
 {
     int stacks = get_int("input a number 1-8: \n");
     if(stacks>0&&stacks<9) return stacks;
-    stacks=0;
     size();
     return stacks;
 }
@@ -29,7 +28,7 @@ void edge (int iteration)
     edge(iteration);
     return;
 }
-
+// make the full line
 void line(int n, int total)
 {
     whiteSpace(n,total);
@@ -38,6 +37,7 @@ void line(int n, int total)
     edge(n);
     printf("\n");
 }
+//stacks the lines
 void stack (int n, int total){
     n=n+1;
     line(n,total);
@@ -45,6 +45,7 @@ void stack (int n, int total){
     stack(n,total);
     return;
 }
+//makes the whitespace before the blocks
 void whiteSpace(int n, int total)
 {
     if(n==total)return;
