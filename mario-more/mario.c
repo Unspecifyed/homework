@@ -15,13 +15,16 @@ int main(void)
 int size(void)
 {
     int stacks = get_int("input a number 1-8: \n");
-    while (stacks < 0|| stacks > 8) stacks = get_int("input a number 1-8: \n");
+    while (stacks < 0 || stacks > 8)
+    {
+        stacks = get_int("input a number 1-8: \n");
+    }
     return stacks;
 }
 // Creates the edge of the blocks
-void edge (int iteration)
+void edge(int iteration)
 {
-    if(iteration==0) return;
+    if (iteration==0)return;
     iteration=iteration-1;
     printf("#");
     edge(iteration);
