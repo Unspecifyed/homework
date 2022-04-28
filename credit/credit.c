@@ -4,8 +4,8 @@
 int credit_number_digits(long n);
 int main(void)
 {
-    const long CREDIT_NUMBER= get_long("Number: ");
-    credit_number_digits(CREDIT_NUMBER);
+    const long CREDIT_NUMBER = get_long("Number: ");
+    const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
     return 0;
 }
 // Finds the number of digits
