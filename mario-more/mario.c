@@ -14,9 +14,11 @@ int main(void)
 // Gets the size of the "blocks"
 int size(void)
 {
+    while(true)
+    {
     int stacks = get_int("input a number 1-8: \n");
     if(stacks>0&&stacks<9) return stacks;
-    size();
+    }
     return stacks;
 }
 // Creates the edge of the blocks
