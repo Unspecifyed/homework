@@ -62,7 +62,8 @@ int getNthDigit(int num, int n)
     result = result % 10;
     return result;
 }
-int checksum(int num)
+// check sum of the number given the number, nth element, amount of digets
+int checksum(int num, int n, int size)
 {
 
 }
