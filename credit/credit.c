@@ -4,9 +4,11 @@
 int credit_number_digits(long n);
 int last_two(int n);
 int brand(int digit, int last);
-int main(void)
 int getNthDigit(int num, int n);
-int checksum(int num, int n, int size, int sum);
+bool checksum(int num, int n, int size, int sum);
+void output(int n);
+// main function
+int main(void)
 {
     const long CREDIT_NUMBER = get_long("Number: ");
     const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
@@ -64,7 +66,7 @@ int getNthDigit(int num, int n)
     return result;
 }
 // check sum of the number given the number, nth element, amount of digets
-int checksum(int num, int n, int size, int sum)
+bool checksum(int num, int n, int size, int sum)
 {
     if(n < size)
     {
@@ -72,4 +74,12 @@ int checksum(int num, int n, int size, int sum)
     }
     sum = sum + sum + getNthDigit(num, n);
 
+}
+// outputs the results
+void output(int n)
+{
+    switch(n)
+    {
+        
+    }
 }
