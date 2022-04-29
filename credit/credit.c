@@ -104,7 +104,7 @@ void output(int n)
 {
     switch(n)
     {
-
+        case 
     }
 }
 // spitis and adds numbers grader then 10
