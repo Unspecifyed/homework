@@ -17,6 +17,7 @@ int main(void)
     const int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_LAST_TWO);
     const int ODD_SUM = checksum(CREDIT_NUMBER, 1, CREDIT_DIGIT, 0, 2);
     const int EVEN_SUM = checksum(CREDIT_NUMBER, 0, CREDIT_DIGIT, 0, 1);
+    
     return 0;
 }
 // Finds the number of digits
