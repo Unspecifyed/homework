@@ -5,7 +5,7 @@ int credit_number_digits(long n);
 int last_two(int n);
 int brand(int digit, int last);
 int getNthDigit(int num, int n);
-bool checksum(int num, int n, int size, int sum);
+int checksum(int num, int n, int size, int sum);
 int splitAdd(int n);
 void output(int n);
 // main function
@@ -67,7 +67,7 @@ int getNthDigit(int num, int n)
     return result;
 }
 // check sum of the number given the number, nth element, amount of digets
-bool checksum(int num, int n, int size, int sum)
+int checksum(int num, int n, int size, int sum)
 {
     if(n < size)
     {
@@ -84,7 +84,8 @@ bool checksum(int num, int n, int size, int sum)
         sum = sum + nthSum;
     }
     n = n + 2;
-    checksum(num)
+    checksum(num, n, size, sum);
+    return 1;
 }
 // outputs the results
 void output(int n)
