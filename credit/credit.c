@@ -105,7 +105,7 @@ void output(int n)
     switch(n)
     {
         case 0:
-        printf(")
+        printf("INVALID\n");
     }
 }
 // spitis and adds numbers grader then 10
