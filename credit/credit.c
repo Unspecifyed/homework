@@ -6,6 +6,7 @@ int last_two(int n);
 int brand(int digit, int last);
 int main(void)
 int getNthDigit(int num, int n);
+int checksum(int num);
 {
     const long CREDIT_NUMBER = get_long("Number: ");
     const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
@@ -58,4 +59,10 @@ int getNthDigit(int num, int n)
 {
     int result = 0;
     n = num / pow(10, n);
+    result = result % 10;
+    return result;
+}
+int checksum(int num)
+{
+    
 }
