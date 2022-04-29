@@ -6,6 +6,7 @@ int last_two(int n);
 int brand(int digit, int last);
 int getNthDigit(int num, int n);
 bool checksum(int num, int n, int size, int sum);
+int splitAdd(int n);
 void output(int n);
 // main function
 int main(void)
@@ -84,4 +85,8 @@ void output(int n)
     {
 
     }
+}
+int splitAdd(int n)
+{
+    
 }
