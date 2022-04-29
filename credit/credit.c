@@ -64,5 +64,5 @@ int getNthDigit(int num, int n)
 }
 int checksum(int num)
 {
-    
+
 }
