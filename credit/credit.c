@@ -104,7 +104,8 @@ void output(int n)
 {
     switch(n)
     {
-        case 
+        case 0:
+        printf(")
     }
 }
 // spitis and adds numbers grader then 10
