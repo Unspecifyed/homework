@@ -74,8 +74,12 @@ bool checksum(int num, int n, int size, int sum)
 
         return sum;
     }
-    sum = sum + (2 * getNthDigit(num, n)); // adds twice of the nth element
-    n = n + 2; // gets every other nth element
+    int nthSum = (2 * getNthDigit(num, n)); // adds twice of the nth element
+    if (nthSum > 9)
+    {
+        splitAdd(nthSum);
+    }
+    sum = sum +     n = n + 2; // gets every other nth element
 
 }
 // outputs the results
@@ -88,5 +92,6 @@ void output(int n)
 }
 int splitAdd(int n)
 {
-    
+    int result = getNthDigit(n,0) + getNthDigit(n, 1);
+    return result;
 }
