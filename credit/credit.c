@@ -5,6 +5,7 @@ int credit_number_digits(long n);
 int last_two(int n);
 int brand(int digit, int last);
 int main(void)
+int getNthDigit(int num, int n);
 {
     const long CREDIT_NUMBER = get_long("Number: ");
     const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
