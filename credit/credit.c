@@ -5,7 +5,7 @@ int credit_number_digits(long n);
 int last_two(int n);
 int brand(int digit, int last);
 int getNthDigit(int num, int n);
-int checksum(int num, int n, int size, int sum);
+int checksum(int num, int n, int size, int sum, int odd);
 int splitAdd(int n);
 void output(int n);
 // main function
@@ -15,8 +15,8 @@ int main(void)
     const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
     const int CREDIT_LAST_TWO = last_two(CREDIT_NUMBER);
     const int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_LAST_TWO);
-    const int ODD_SUM = checksum(CREDIT_NUMBER, 1, CREDIT_DIGIT, 0);
-    const int EVEN_SUM = checksum(CREDIT_NUMBER, 0, CREDIT_DIGIT, 0);
+    const int ODD_SUM = checksum(CREDIT_NUMBER, 1, CREDIT_DIGIT, 0, 2);
+    const int EVEN_SUM = checksum(CREDIT_NUMBER, 0, CREDIT_DIGIT, 0, 1);
     return 0;
 }
 // Finds the number of digits
@@ -68,14 +68,14 @@ int getNthDigit(int num, int n)
     return result;
 }
 // check sum of the number given the number, nth element, amount of digets
-int checksum(int num, int n, int size, int sum)
+int checksum(int num, int n, int size, int sum, int odd)
 {
     if(n < size)
     {
 
         return sum;
     }
-    int nthSum = (2 * getNthDigit(num, n)); // adds twice of the nth element
+    int nthSum = (odd * getNthDigit(num, n)); // adds twice of the nth element
     if (nthSum > 9)
     {
         sum = sum + splitAdd(nthSum);
