@@ -70,5 +70,6 @@ int checksum(int num, int n, int size, int sum)
     {
         return sum;
     }
-    sum = sum +
+    sum = sum + sum + getNthDigit(num, n);
+
 }
