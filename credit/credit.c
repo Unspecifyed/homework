@@ -70,6 +70,7 @@ bool checksum(int num, int n, int size, int sum)
 {
     if(n < size)
     {
+        
         return sum;
     }
     sum = sum + sum + getNthDigit(num, n);
@@ -80,6 +81,6 @@ void output(int n)
 {
     switch(n)
     {
-        
+
     }
 }
