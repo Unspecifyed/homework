@@ -70,10 +70,10 @@ bool checksum(int num, int n, int size, int sum)
 {
     if(n < size)
     {
-        
+
         return sum;
     }
-    sum = sum + sum + getNthDigit(num, n);
+    sum = sum + (2 * getNthDigit(num, n));
 
 }
 // outputs the results
