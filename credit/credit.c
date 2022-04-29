@@ -8,6 +8,7 @@ int getNthDigit(int num, int n);
 int checksum(int num, int n, int size, int sum, int odd);
 int splitAdd(int n);
 void output(int n);
+bool isValid(int even, int odd);
 // main function
 int main(void)
 {
@@ -17,7 +18,16 @@ int main(void)
     const int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_LAST_TWO);
     const int ODD_SUM = checksum(CREDIT_NUMBER, 1, CREDIT_DIGIT, 0, 2);
     const int EVEN_SUM = checksum(CREDIT_NUMBER, 0, CREDIT_DIGIT, 0, 1);
-    
+    const bool VALID = isValid(ODD_SUM, EVEN_SUM);
+
+    if(VALID)
+    {
+        output(BRAND_NUMBER);
+    }
+    else
+    {
+        output(0);
+    }
     return 0;
 }
 // Finds the number of digits
@@ -97,8 +107,18 @@ void output(int n)
 
     }
 }
+// spitis and adds numbers grader then 10
 int splitAdd(int n)
 {
     int result = getNthDigit(n,0) + getNthDigit(n, 1);
     return result;
+}
+// sees if checksum is valid
+bool isValid(int even, int odd)
+{
+    int sum = even + odd;
+    return
+    {
+        if(sum % 10 == 0);
+    }
 }
