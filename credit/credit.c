@@ -53,3 +53,9 @@ int brand(int digit, int last)
     }
     return 0;
 }
+// Gets the nth diget of the number inputed
+int getNthDigit(int num, int n)
+{
+    int 
+    n = num / pow(10, n);
+}
