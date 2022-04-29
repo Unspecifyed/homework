@@ -73,7 +73,8 @@ bool checksum(int num, int n, int size, int sum)
 
         return sum;
     }
-    sum = sum + (2 * getNthDigit(num, n));
+    sum = sum + (2 * getNthDigit(num, n)); // adds twice of the nth element
+    n = n + 2; // gets every other nth element
 
 }
 // outputs the results
