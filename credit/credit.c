@@ -105,8 +105,18 @@ void output(int n)
     switch(n)
     {
         case 0:
-        printf("INVALID\n");
-    }
+            printf("INVALID\n");
+            break;
+        case 1:
+            printf("INVALID\n");
+            break;
+        case 2:
+            printf("INVALID\n");
+            break;
+        case 3:
+            printf("INVALID\n");
+            break;
+  }
 }
 // spitis and adds numbers grader then 10
 int splitAdd(int n)
