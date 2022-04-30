@@ -69,8 +69,8 @@ int brand(int digit, int last)
 int getNthDigit(int num, int n)
 {
     int tensPlace = pow(10, n);
-    
-    int result = num / pow(10,n) % 10;
+    int cutter = num / tensPlace;
+    int result = cutter % 10;
     return result;
 }
 // check sum of the number given the number, nth element, amount of digets
