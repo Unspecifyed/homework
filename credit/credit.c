@@ -66,10 +66,10 @@ int brand(int digit, int last)
     return 0;
 }
 // Gets the nth diget of the number inputed
-int getNthDigit(int num, int n)
+int getNthDigit(long num, int n)
 {
-    int tensPlace = pow(10, n);
-    int result = (num / tensPlace) % 10;
+    long tensPlace = pow(10, n);
+    long result = (num / tensPlace) % 10;
     return result;
 }
 // check sum of the number given the number, nth element, amount of digets
