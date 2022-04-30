@@ -68,7 +68,8 @@ int brand(int digit, int last)
 // Gets the nth diget of the number inputed
 int getNthDigit(int num, int n)
 {
-    
+    int tens = power()
+    int result =
     return result;
 }
 // check sum of the number given the number, nth element, amount of digets
