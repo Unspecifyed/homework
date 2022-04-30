@@ -108,13 +108,13 @@ void output(int n)
             printf("INVALID\n");
             break;
         case 1:
-            printf("INVALID\n");
+            printf("AMEX\n");
             break;
         case 2:
-            printf("INVALID\n");
+            printf("MASTERCARD\n");
             break;
         case 3:
-            printf("INVALID\n");
+            printf("VISA\n");
             break;
   }
 }
