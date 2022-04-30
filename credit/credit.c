@@ -48,6 +48,9 @@ int last_two(long n)
 // Finds the brand
 int brand(int digit, int last)
 {
+    bool di13 = false;
+    bool di15 = false;
+    bool di16 = false;
     // American Express test
     if(digit == 15 && (last == 34 || last == 37))
     {
