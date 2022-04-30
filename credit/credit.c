@@ -128,8 +128,10 @@ int splitAdd(int n)
 bool isValid(int even, int odd)
 {
     int sum = even + odd;
-    return;
+    bool valid = false;
+    if(sum % 10 == 0)
     {
-        if(sum % 10 == 0);
+        valid = true;
     }
+    return valid;
 }
