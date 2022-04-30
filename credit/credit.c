@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <math.h>
 int credit_number_digits(long n);
-int last_two(int n);
+int last_two(long n);
 int brand(int digit, int last);
-int getNthDigit(int num, int n);
+int getNthDigit(long num, int n);
 int checksum(int num, int n, int size, int sum, int odd);
 int splitAdd(int n);
 void output(int n);
@@ -33,7 +33,7 @@ int main(void)
 // Finds the number of digits
 int credit_number_digits(long n)
 {
-    int digit = (int) log10(n);
+    long digit = (int) log10(n);
     digit = digit + 1;
     return digit ;
 }
