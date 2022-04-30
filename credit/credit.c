@@ -41,15 +41,10 @@ int credit_number_digits(long n)
 // Finds the last two numbers
 int last_two(int n)
 {
-    if(n < 100)
-    {
-        printf("last two: %d \n", n);
-        return n;
-    }
-    printf("%d\n",n);
-    n = n / 10;
-    last_two(n);
-    return 0;
+    int one = getNthDigit(n,0);
+    int ten = getNthDigit(n,1) * 10;
+    int result = ten + one;
+    return result;
 }
 // Finds the brand
 int brand(int digit, int last)
