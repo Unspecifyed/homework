@@ -12,7 +12,7 @@ bool isValid(int even, int odd);
 // main function
 int main(void)
 {
-    const long CREDIT_NUMBER = get_long("Number: ");
+    long CREDIT_NUMBER = get_long("Number: ");
     const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
     const int CREDIT_LAST_TWO = last_two(CREDIT_NUMBER);
     const int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_LAST_TWO);
