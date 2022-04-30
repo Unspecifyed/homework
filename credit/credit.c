@@ -68,7 +68,8 @@ int brand(int digit, int last)
 // Gets the nth diget of the number inputed
 int getNthDigit(int num, int n)
 {
-    int
+    int tensPlace = pow(10, n);
+    
     int result = num / pow(10,n) % 10;
     return result;
 }
