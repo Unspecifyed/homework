@@ -13,12 +13,12 @@ bool isValid(int even, int odd);
 int main(void)
 {
     long CREDIT_NUMBER = get_long("Number: ");
-    const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
-    const int CREDIT_LAST_TWO = last_two(CREDIT_NUMBER);
-    const int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_LAST_TWO);
-    const int ODD_SUM = checksum(CREDIT_NUMBER, 1, CREDIT_DIGIT, 0, 2);
-    const int EVEN_SUM = checksum(CREDIT_NUMBER, 0, CREDIT_DIGIT, 0, 1);
-    const bool VALID = isValid(ODD_SUM, EVEN_SUM);
+    int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
+    int CREDIT_LAST_TWO = last_two(CREDIT_NUMBER);
+    int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_LAST_TWO);
+    int ODD_SUM = checksum(CREDIT_NUMBER, 1, CREDIT_DIGIT, 0, 2);
+    int EVEN_SUM = checksum(CREDIT_NUMBER, 0, CREDIT_DIGIT, 0, 1);
+    bool VALID = isValid(ODD_SUM, EVEN_SUM);
 
     if(VALID)
     {
