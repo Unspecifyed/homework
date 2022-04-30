@@ -38,7 +38,7 @@ int credit_number_digits(long n)
     return digit ;
 }
 // Finds the last two numbers
-int last_two(int n)
+int last_two(long n)
 {
     int one = getNthDigit(n,1);
     int ten = getNthDigit(n,2) * 10;
