@@ -96,7 +96,7 @@ int checksum(int num, int n, int size, int sum, int odd)
         sum = sum + nthSum;
     }
     n = n + 2;
-    checksum(num, n, size, sum);
+    checksum(num, n, size, sum, odd);
     return 1;
 }
 // outputs the results
@@ -128,7 +128,7 @@ int splitAdd(int n)
 bool isValid(int even, int odd)
 {
     int sum = even + odd;
-    return
+    return;
     {
         if(sum % 10 == 0);
     }
