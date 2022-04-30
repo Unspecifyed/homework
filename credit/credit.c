@@ -46,6 +46,7 @@ int last_two(int n)
         printf("last two: %d \n", n);
         return n;
     }
+    printf("%d\n",n);
     n = n / 10;
     last_two(n);
     return 0;
