@@ -55,7 +55,7 @@ int brand(int digit, int last)
     bool lastMC = (last > 50 && last < 56);
     bool lastV = (last > 39 && last < 50);
     // American Express test
-    if(digit == 15 && (last == 34 || last == 37))
+    if()
     {
         return 1;
     }
