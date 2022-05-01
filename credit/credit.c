@@ -65,7 +65,7 @@ int brand(int digit, int last)
         return 2;
     }
     // Visa test
-    if()
+    if((di13 || di16) && fistV)
     {
         return 3;
     }
