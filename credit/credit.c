@@ -42,7 +42,7 @@ int first_two(long n, int dig)
 {
     int secondFirst = dig -1;
     int firstSing = getNthDigit(n, dig);
-    int first = firstSing *10;
+    int first = firstSing ;
     int second = getNthDigit(n, secondFirst);
     int result = first + second;
     return result;
