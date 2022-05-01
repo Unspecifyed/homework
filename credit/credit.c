@@ -19,6 +19,8 @@ int main(void)
     const int ODD_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 0, true, 0);
     const int EVEN_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 1, false, 0);
     const bool VALID = isValid(ODD_SUM, EVEN_SUM);
+    printf("%d\n", checksum(CREDIT_NUMBER, CREDIT_DIGIT, 0, true, 0);
+)
 
     if(VALID)
     {
