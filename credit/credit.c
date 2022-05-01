@@ -100,6 +100,10 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum);
     {
         additon = splitAdd(additon);
     }
+    sum = sum + addition;
+    n = n +2;
+    checksum(long creditNumber, int creditDigit, int n, bool odd, int sum);
+    return 0; // should never happen
 }
 // outputs the results
 void output(int n)
@@ -123,7 +127,7 @@ void output(int n)
 // spitis and adds numbers grader then 10
 int splitAdd(int n)
 {
-    int result = getNthDigit(n,0) + getNthDigit(n, 1);
+    int result = getNthDigit(n,1) + getNthDigit(n, 2);
     return result;
 }
 // sees if checksum is valid
