@@ -86,26 +86,26 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum)
     int addition = 0;
     int multiplyer = 2;
     bool done = (n > creditDigit);
-    if(done)
+    while(!done)
     {
-        return sum;
-    }
-    if(odd)
-    {
-        addition = getNthDigit(creditNumber, n);
-    }
-    else
-    {
-        addition = getNthDigit(creditNumber, n);
-        addition = addition * multiplyer;
-    }
-    if (addition > 9)
-    {
-        addition = splitAdd(addition);
-    }
-    sum = sum + addition;
-    n = n +2;
 
+        if(odd)
+        {
+            addition = getNthDigit(creditNumber, n);
+        }
+         else
+        {
+             addition = getNthDigit(creditNumber, n);
+             addition = addition * multiplyer;
+        }
+        if (addition > 9)
+        {
+         addition = splitAdd(addition);
+        }
+        sum = sum + addition;
+        n = n +2;
+        done = (n > creditDigit);
+        }
     return sum;
 }
 // outputs the results
