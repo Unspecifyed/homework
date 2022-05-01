@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 int credit_number_digits(long n);
-int last_two(long n);
+int first_two(long cn, int dig);
 int brand(int digit, int last);
 int getNthDigit(long num, int n);
 int checksum(int num, int n, int size, int sum, int odd);
@@ -14,8 +14,8 @@ int main(void)
 {
     const long CREDIT_NUMBER = get_long("Number: ");
     const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
-    const int CREDIT_FIRST_TWO = last_two(CREDIT_NUMBER);
-    const int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_LAST_TWO);
+    const int CREDIT_FIRST_TWO = first_two(CREDIT_NUMBER, CREDIT_DIGIT);
+    const int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_FIRST_TWO);
     const int ODD_SUM = checksum(CREDIT_NUMBER, 1, CREDIT_DIGIT, 0, 2);
     const int EVEN_SUM = checksum(CREDIT_NUMBER, 0, CREDIT_DIGIT, 0, 1);
     const bool VALID = isValid(ODD_SUM, EVEN_SUM);
@@ -38,11 +38,11 @@ int credit_number_digits(long n)
     return digit ;
 }
 // Finds the last two numbers
-int last_two(long n)
+int first_two(long n, int dig)
 {
-    int one = getNthDigit(n,0);
-    int ten = getNthDigit(n,1) * 10;
-    int result = ten + one;
+    int first = getNthDigit(n,dig) * 10;
+    int secondFirst = getNthDigit(n,dig);
+    int result = first + secondFirst;
     return result;
 }
 // Finds the brand
