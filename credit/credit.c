@@ -82,7 +82,7 @@ int getNthDigit(long num, int n)
 // check sum of the number given the number, nth element, amount of digets
 int checksum(int num, int n, int size, int sum, int odd)
 {
-    if(n > size)
+    if(n < size)
     {
 
         return sum;
