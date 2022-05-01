@@ -40,10 +40,8 @@ int credit_number_digits(long n)
 // Finds the last two numbers
 int first_two(long n, int dig)
 {
-    int secondFirst = dig -1;
-    int firstSing = getNthDigit(n, dig);
-    int first = firstSing ;
-    int second = getNthDigit(n, secondFirst);
+    int first = getNthDigit(n, dig -1) * 10;
+    int second = getNthDigit(n, dig -2);
     int result = first + second;
     return result;
 }
