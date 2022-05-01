@@ -42,7 +42,7 @@ int first_two(long n, int dig)
 {
     int first = getNthDigit(n, dig -1) * 10;
     int second = getNthDigit(n, dig -2);
-    int result = first + second;
+    int result = (first + second);
     return result;
 }
 // Finds the brand
