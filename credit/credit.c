@@ -51,21 +51,21 @@ int brand(int digit, int last)
     bool di13 = (digit == 13);
     bool di15 = (digit == 15);
     bool di16 = (digit == 16);
-    bool lastAE = (last == 34 || last == 37);
-    bool lastMC = (last > 50 && last < 56);
-    bool lastV = (last > 39 && last < 50);
+    bool fistAE = (last == 34 || last == 37);
+    bool fistMC = (last > 50 && last < 56);
+    bool fistV = (last > 39 && last < 50);
     // American Express test
-    if()
+    if(di15 && fistAE)
     {
         return 1;
     }
     // MasterCard test
-    if(digit == 16 && (last > 50 && last < 56))
+    if(di15 && fistMC)
     {
         return 2;
     }
     // Visa test
-    if((digit == 13 || digit == 16) && (last > 39 && last < 50))
+    if()
     {
         return 3;
     }
