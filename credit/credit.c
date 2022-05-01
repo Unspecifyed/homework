@@ -87,6 +87,7 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum)
     bool done = (n > creditDigit);
     if(done)
     {
+        printf("%d\n", sum);
         return sum;
     }
     if(odd)
