@@ -5,7 +5,7 @@ int credit_number_digits(long n);
 int first_two(long cn, int dig);
 int brand(int digit, int last);
 int getNthDigit(long num, int n);
-int checksum(int num, int n, int size, int sum, int odd);
+int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum);
 int splitAdd(int n);
 void output(int n);
 bool isValid(int even, int odd);
@@ -16,8 +16,8 @@ int main(void)
     const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
     const int CREDIT_FIRST_TWO = first_two(CREDIT_NUMBER, CREDIT_DIGIT);
     const int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_FIRST_TWO);
-    const int ODD_SUM = checksum(CREDIT_NUMBER, 2, CREDIT_DIGIT, 0, 2);
-    const int EVEN_SUM = checksum(CREDIT_NUMBER, 1, CREDIT_DIGIT, 0, 1);
+    const int ODD_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 2, true, 0);
+    const int EVEN_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 1, false, 0;
     const bool VALID = isValid(ODD_SUM, EVEN_SUM);
 
     if(VALID)
@@ -80,25 +80,17 @@ int getNthDigit(long num, int n)
     return result;
 }
 // check sum of the number given the number, nth element, amount of digets
-int checksum(int num, int n, int size, int sum, int odd)
+int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum);
 {
-    if(n < size)
+    bool done = (n > creditDigit);
+    if(done)
     {
-
         return sum;
     }
-    int nthSum = (odd * getNthDigit(num, n)); // adds twice of the nth element
-    if (nthSum > 9)
+    if(odd)
     {
-        sum = sum + splitAdd(nthSum);
+        
     }
-    else
-    {
-        sum = sum + nthSum;
-    }
-    n = n + 2;
-    checksum(num, n, size, sum, odd);
-    return 1;
 }
 // outputs the results
 void output(int n)
