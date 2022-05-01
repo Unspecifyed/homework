@@ -51,6 +51,7 @@ int brand(int digit, int last)
     bool di13 = (digit == 13);
     bool di15 = (digit == 15);
     bool di16 = (digit == 16);
+    bool visaDig = (di13 || di16);
     bool fistAE = (last == 34 || last == 37);
     bool fistMC = (last > 50 && last < 56);
     bool fistV = (last > 39 && last < 50);
@@ -65,7 +66,7 @@ int brand(int digit, int last)
         return 2;
     }
     // Visa test
-    if((di13 || di16) && fistV)
+    if(visaDig && fistV)
     {
         return 3;
     }
