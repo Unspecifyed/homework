@@ -83,6 +83,7 @@ int getNthDigit(long num, int n)
 int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum)
 {
     int addition = 0;
+    int multiplyer = 2;
     bool done = (n > creditDigit);
     if(done)
     {
@@ -95,7 +96,7 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum)
     else
     {
         addition = getNthDigit(creditNumber, n);
-        addition = (addition * 2);
+        addition = addition * multiplyer;
     }
     if (addition > 9)
     {
