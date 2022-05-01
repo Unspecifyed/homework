@@ -105,6 +105,8 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum)
     }
     sum = sum + addition;
     n = n +2;
+
+    return sum;
 }
 // outputs the results
 void output(int n)
