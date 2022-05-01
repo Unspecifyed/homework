@@ -41,7 +41,7 @@ int credit_number_digits(long n)
 int first_two(long n, int dig)
 {
     int first = getNthDigit(n,dig) * 10;
-    int secondFirst = getNthDigit(n,dig);
+    int secondFirst = getNthDigit(n,dig - 1);
     int result = first + secondFirst;
     return result;
 }
