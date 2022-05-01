@@ -16,8 +16,8 @@ int main(void)
     const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
     const int CREDIT_FIRST_TWO = first_two(CREDIT_NUMBER, CREDIT_DIGIT);
     const int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_FIRST_TWO);
-    const int ODD_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 0, true, 0);
-    const int EVEN_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 1, false, 0);
+    int ODD_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 0, true, 0);
+    int EVEN_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 1, false, 0);
     const bool VALID = isValid(ODD_SUM, EVEN_SUM);
 
     if(VALID)
