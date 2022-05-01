@@ -89,7 +89,7 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum);
     }
     if(odd)
     {
-        
+        int addition = getNthDigit(creditNumber, n) * 2;
     }
 }
 // outputs the results
