@@ -60,7 +60,7 @@ int brand(int digit, int last)
         return 1;
     }
     // MasterCard test
-    if(di15 && fistMC)
+    if(di16 && fistMC)
     {
         return 2;
     }
