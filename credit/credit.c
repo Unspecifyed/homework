@@ -102,7 +102,7 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum)
     }
     sum = sum + addition;
     n = n +2;
-    checksum(long creditNumber, int creditDigit, int n, bool odd, int sum);
+    checksum(creditNumber, creditDigit, n, odd, sum);
     return 0; // should never happen
 }
 // outputs the results
