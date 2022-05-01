@@ -40,9 +40,11 @@ int credit_number_digits(long n)
 // Finds the last two numbers
 int first_two(long n, int dig)
 {
-    int first = getNthDigit(n,dig) * 10;
-    int secondFirst = getNthDigit(n,dig - 1);
-    int result = first + secondFirst;
+    int secondFirst = dig -1;
+    int firstSing = getNthDigit(n, dig);
+    int first = firstSing *10;
+    int second = getNthDigit(n, secondFirst);
+    int result = first + second;
     return result;
 }
 // Finds the brand
