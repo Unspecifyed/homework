@@ -16,8 +16,8 @@ int main(void)
     const int CREDIT_DIGIT = credit_number_digits(CREDIT_NUMBER);
     const int CREDIT_FIRST_TWO = first_two(CREDIT_NUMBER, CREDIT_DIGIT);
     const int BRAND_NUMBER = brand(CREDIT_DIGIT, CREDIT_FIRST_TWO);
-    int ODD_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 0, true, 0);
-    int EVEN_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 1, false, 0);
+    const int ODD_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 0, true, 0);
+    const int EVEN_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 1, false, 0);
     const bool VALID = isValid(ODD_SUM, EVEN_SUM);
 
     if(VALID)
@@ -105,7 +105,7 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum)
     sum = sum + addition;
     n = n +2;
     checksum(creditNumber, creditDigit, n, odd, sum);
-    return 0; // should never happen
+    return 1000; // should never happen
 }
 // outputs the results
 void output(int n)
