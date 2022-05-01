@@ -82,6 +82,7 @@ int getNthDigit(long num, int n)
 // check sum of the number given the number, nth element, amount of digets
 int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum);
 {
+    int addition = 0;
     bool done = (n > creditDigit);
     if(done)
     {
@@ -89,7 +90,15 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum);
     }
     if(odd)
     {
-        int addition = getNthDigit(creditNumber, n) * 2;
+        addition = getNthDigit(creditNumber, n) * 2;
+    }
+    else
+    {
+        addition = getNthDigit(creditNumber, n);
+    }
+    if (addition > 9)
+    {
+        additon = splitAdd(additon);
     }
 }
 // outputs the results
