@@ -106,7 +106,7 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum)
     sum = sum + addition;
     n = n +2;
     checksum(creditNumber, creditDigit, n, odd, sum);
-    return 1000; // should never happen
+    // return 1000; // should never happen
 }
 // outputs the results
 void output(int n)
