@@ -129,7 +129,7 @@ void output(int n)
 // spitis and adds numbers grader then 10
 int splitAdd(int n)
 {
-    int result = getNthDigit(n,1) + getNthDigit(n, 2);
+    int result = getNthDigit(n,0) + getNthDigit(n, 1);
     return result;
 }
 // sees if checksum is valid
