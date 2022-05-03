@@ -97,9 +97,9 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum)
             addition = getNthDigit(creditNumber, n);
             addition = addition * multiplyer;
         }
-            if (addition > 9)
+        if (addition > 9)
         {
-         addition = splitAdd(addition);
+            addition = splitAdd(addition);
         }
         sum = sum + addition;
         n = n + 2;
