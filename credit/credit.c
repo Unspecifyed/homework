@@ -20,7 +20,7 @@ int main(void)
     const int EVEN_SUM = checksum(CREDIT_NUMBER, CREDIT_DIGIT, 1, false, 0);
     const bool VALID = isValid(ODD_SUM, EVEN_SUM);
 
-    if(VALID)
+    if (VALID)
     {
         output(BRAND_NUMBER);
     }
@@ -40,8 +40,8 @@ int credit_number_digits(long n)
 // Finds the last two numbers
 int first_two(long n, int dig)
 {
-    int first = getNthDigit(n, dig -1) * 10;
-    int second = getNthDigit(n, dig -2);
+    int first = getNthDigit(n, dig - 1) * 10;
+    int second = getNthDigit(n, dig - 2);
     int result = (first + second);
     return result;
 }
@@ -56,17 +56,17 @@ int brand(int digit, int last)
     bool fistMC = (last > 50 && last < 56);
     bool fistV = (last > 39 && last < 50);
     // American Express test
-    if(di15 && fistAE)
+    if (di15 && fistAE)
     {
         return 1;
     }
     // MasterCard test
-    if(di16 && fistMC)
+    if (di16 && fistMC)
     {
         return 2;
     }
     // Visa test
-    if(visaDig && fistV)
+    if (visaDig && fistV)
     {
         return 3;
     }
@@ -85,32 +85,32 @@ int checksum(long creditNumber, int creditDigit, int n, bool odd, int sum)
     int addition = 0;
     int multiplyer = 2;
     bool done = (n > creditDigit);
-    while(!done)
+    while (!done)
     {
 
-        if(odd)
+        if (odd)
         {
             addition = getNthDigit(creditNumber, n);
         }
-         else
+        else
         {
-             addition = getNthDigit(creditNumber, n);
-             addition = addition * multiplyer;
+            addition = getNthDigit(creditNumber, n);
+            addition = addition * multiplyer;
         }
-        if (addition > 9)
+            if (addition > 9)
         {
          addition = splitAdd(addition);
         }
         sum = sum + addition;
-        n = n +2;
+        n = n + 2;
         done = (n > creditDigit);
-        }
+    }
     return sum;
 }
 // outputs the results
 void output(int n)
 {
-    switch(n)
+    switch (n)
     {
         case 0:
             printf("INVALID\n");
@@ -124,12 +124,12 @@ void output(int n)
         case 3:
             printf("VISA\n");
             break;
-  }
+    }
 }
 // spitis and adds numbers grader then 10
 int splitAdd(int n)
 {
-    int result = getNthDigit(n,0) + getNthDigit(n, 1);
+    int result = getNthDigit(n, 0) + getNthDigit(n, 1);
     return result;
 }
 // sees if checksum is valid
@@ -137,7 +137,7 @@ bool isValid(int even, int odd)
 {
     int sum = even + odd;
     bool valid = false;
-    if(sum % 10 == 0)
+    if (sum % 10 == 0)
     {
         valid = true;
     }
