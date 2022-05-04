@@ -27,6 +27,7 @@ int compute_score(string word)
     int n = 0;
     while(n != '\0')
     {
-        
+        int point = word[n];
+        printf('%d', point);
     }
 }
