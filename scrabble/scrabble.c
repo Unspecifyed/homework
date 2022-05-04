@@ -44,23 +44,27 @@ int compute_score(string word)
         char point = word[n];
         int ipoint = (int) point;
         int offset = 97;
+        bool skip = false;
         if (isupper(point))
         {
             offset = 65;
         }
         if (ipoint < 65)
         {
-            score = 0;
+            skip = true;
         }
         if (ipoint > 90 && ipoint < 97)
         {
-            score = 0;
+            skip = true;
         }
         if (ipoint > 122)
         {
-            score = 0;
+            skip = true;
         }
+        if (!skip)
+        {
             score = score + POINTS[ipoint - offset];
+        }
         n ++;
     }
     return score;
