@@ -48,7 +48,18 @@ int compute_score(string word)
         {
             offset = 65;
         }
-        if
+        if (ipoint < 65)
+        {
+            score = 0;
+        }
+        if (ipoint > 90 && ipoint < 97)
+        {
+            score = 0;
+        }
+        if (ipoint > 122)
+        {
+            score = 0;
+        }
             score = score + POINTS[ipoint - offset];
         n ++;
     }
