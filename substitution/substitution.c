@@ -3,6 +3,6 @@
 
 int main(int argc, string argv[])
 {
-    int cipher[] = JTREKYAVOGDXPSNCUIZLFBMWHQ
+    int cipher[] = {'J','T','R','E','K','Y','A','V','O','G','D','X','P','S','N','C','U','I','Z','L','F','B','M','W','H','Q'};
 
 }
