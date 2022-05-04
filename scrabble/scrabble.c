@@ -39,7 +39,7 @@ int compute_score(string word)
     // TODO: Compute and return score for string
     int n = 0;
     int score = 0;
-    while(word[n] != '\0')
+    while (word[n] != '\0')
     {
         char point = word[n];
         int ipoint = (int) point;
