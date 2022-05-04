@@ -32,7 +32,7 @@ int compute_score(string word)
         int ipoint = (int) point;
         if (isupper)
         {
-            POINTS[ipoint + ]
+            POINTS[ipoint - 65]
         }
         n ++;
     }
