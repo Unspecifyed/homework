@@ -30,10 +30,12 @@ int compute_score(string word)
     {
         char point = word[n];
         int ipoint = (int) point;
+        int offset = 97;
         if (isupper(point))
         {
-            score = score + POINTS[ipoint - 65];
+            offset = 65;
         }
+            score = score + POINTS[ipoint - offset];
         n ++;
     }
     return score;
