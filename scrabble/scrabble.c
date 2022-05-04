@@ -48,6 +48,7 @@ int compute_score(string word)
         {
             offset = 65;
         }
+        if
             score = score + POINTS[ipoint - offset];
         n ++;
     }
