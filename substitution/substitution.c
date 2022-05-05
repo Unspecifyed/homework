@@ -19,9 +19,11 @@ bool checkKey(string key)
     bool valid = true;
     while(key[n] != '\0')
     {
+        
         if(n > 23)
         {
             valid = false;
+            break;
         }
         n++;
     }
