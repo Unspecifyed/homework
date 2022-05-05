@@ -5,7 +5,6 @@ void scramb(string input);
 int checkKey(string key int aCount);
 int main(int argc, string argv[])
 {
-    string plainText = get_string("plaintext: ");
     int argumentCount = argc;
     string key = argv[1];
     int valid = checkKey(key, argumentCount);
@@ -20,6 +19,7 @@ int main(int argc, string argv[])
 
     }
 
+    string plainText = get_string("plaintext: ");
     printf("ciphertext: ");
     return 0;
 }
