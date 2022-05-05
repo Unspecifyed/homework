@@ -6,7 +6,8 @@ int main(int argc, string argv[])
 {
     int error = 0;
     string word1 = get_string("plaintext: ");
-    string key = argv[0];
+    int argumentCount = argc;
+    string key = argv[1];
 
     printf("ciphertext: ");
     return error;
