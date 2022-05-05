@@ -12,7 +12,11 @@ int main(int argc, string argv[])
 
     while(valid != 0)
     {
-        key = get_string("")
+        switch(valid)
+        {
+            (1)
+            
+        }
 
     }
 
