@@ -8,7 +8,7 @@ int main(int argc, string argv[])
     string plainText = get_string("plaintext: ");
     int argumentCount = argc;
     string key = argv[1];
-    bool error = checkKey(string key);
+    bool valid = checkKey(string key);
 
     printf("ciphertext: ");
     return 0;
