@@ -21,6 +21,11 @@ bool checkKey(string key)
     while(key[n] != '\0')
     {
         value = (int)key[n];
+        if(value < 65)
+        {
+            valid = false;
+            break;
+        }
         if(n > 23)
         {
             valid = false;
