@@ -13,6 +13,9 @@ int main(int argc, string argv[])
     printf("ciphertext: ");
     return 0;
 }
+bool checkKey(string key)
+{
+}
 void scramb(string input)
 {
     int n = 0;
