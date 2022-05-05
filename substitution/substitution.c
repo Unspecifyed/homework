@@ -19,12 +19,12 @@ bool checkKey(string key)
     bool valid = true;
     while(key[n] != '\0')
     {
-        n++;
         if(n > 23)
         {
             valid = false;
             return valid;
         }
+        n++;
     }
 }
 void scramb(string input)
