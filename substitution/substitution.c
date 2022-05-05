@@ -9,18 +9,14 @@ int main(int argc, string argv[])
     string key = argv[1];
     int valid = checkKey(key, argumentCount);
 
-    while(valid != 0)
+    switch(valid)
     {
-        switch(valid)
-        {
-        case 1:
-        key = get_string("No specil char");
-        break;
-        case 2:
-        key = get_string("Key must contain 26 characters.");
-        break;
-
-        }
+    case 1:
+    printf("no specal char");
+    return 1;
+    case 2:
+    printf("Key must contain 26 characters.");
+    return 1;
 
     }
 
