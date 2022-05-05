@@ -26,6 +26,16 @@ bool checkKey(string key)
             valid = false;
             break;
         }
+        if(value > 90 && value < 97)
+        {
+            valid = false;
+            break;
+        }
+        if(value > 122)
+        {
+            valid = false;
+            break;
+        }
         if(n > 23)
         {
             valid = false;
