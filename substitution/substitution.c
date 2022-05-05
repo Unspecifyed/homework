@@ -14,7 +14,8 @@ int main(int argc, string argv[])
         switch(valid)
         {
             case 1:
-            key =
+            key = get_string("No specil char");
+            break;
         }
 
     }
