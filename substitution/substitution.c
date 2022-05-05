@@ -2,15 +2,15 @@
 #include <stdio.h>
 
 void scramb(string input);
-bool checkKey(string key);
+int checkKey(string key);
 int main(int argc, string argv[])
 {
     string plainText = get_string("plaintext: ");
     int argumentCount = argc;
     string key = argv[1];
-    bool valid = checkKey(string key);
+    int valid = checkKey(string key);
 
-    while(!valid)
+    while(valid != 0)
     {
         key = get_string("")
 
@@ -19,27 +19,27 @@ int main(int argc, string argv[])
     printf("ciphertext: ");
     return 0;
 }
-bool checkKey(string key)
+int checkKey(string key)
 {
     int n = 0;
-    bool valid = true;
+    int valid = 0;
     int value = -1;
     while(key[n] != '\0')
     {
         value = (int)key[n];
         if(value < 65)
         {
-            valid = false;
+            valid = 1;
             break;
         }
         if(value > 90 && value < 97)
         {
-            valid = false;
+            valid = 1;
             break;
         }
         if(value > 122)
         {
-            valid = false;
+            valid = 1;
             break;
         }
         if(n > 23)
