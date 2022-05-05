@@ -27,14 +27,14 @@ int checkKey(string key)
 
     if(key[0] == '\0')
     {
-        return 3;
+        return 3; // null key
     }
     while(key[n] != '\0')
     {
         value = (int)key[n];
         if(value < 65)
         {
-            valid = 1;
+            valid = 1 // invalid char
             break;
         }
         if(value > 90 && value < 97)
@@ -51,7 +51,7 @@ int checkKey(string key)
     }
     if(n !=25)
     {
-        valid =2;
+        valid =2; // wrong input
     }
     return valid;
 }
