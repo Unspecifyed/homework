@@ -15,6 +15,10 @@ int main(int argc, string argv[])
 }
 bool checkKey(string key)
 {
+    while(key[n] != '\0')
+    {
+        lol
+    }
 }
 void scramb(string input)
 {
