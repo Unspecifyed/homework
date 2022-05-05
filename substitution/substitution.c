@@ -13,9 +13,13 @@ int main(int argc, string argv[])
     {
         switch(valid)
         {
-            case 1:
-            key = get_string("No specil char");
-            break;
+        case 1:
+        key = get_string("No specil char");
+        break;
+        case 2:
+        key = get_string("Key must contain 26 characters.");
+        break;
+
         }
 
     }
