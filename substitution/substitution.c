@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 void scramb(string input);
-int checkKey(string key int aCount);
+int checkKey(string key, int aCount);
 int main(int argc, string argv[])
 {
     int argumentCount = argc;
