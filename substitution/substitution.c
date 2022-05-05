@@ -15,6 +15,8 @@ int main(int argc, string argv[])
 }
 bool checkKey(string key)
 {
+    int n = 0;
+    
     while(key[n] != '\0')
     {
         lol
