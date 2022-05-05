@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 void scramb(string input);
-int checkKey(string key);
+int checkKey(string key int aCount);
 int main(int argc, string argv[])
 {
     string plainText = get_string("plaintext: ");
     int argumentCount = argc;
     string key = argv[1];
-    int valid = checkKey(string key);
+    int valid = checkKey(key, argumentCount);
 
     while(valid != 0)
     {
@@ -19,11 +19,15 @@ int main(int argc, string argv[])
     printf("ciphertext: ");
     return 0;
 }
-int checkKey(string key)
+int checkKey(string key, int aC)
 {
     int n = 0;
     int valid = 0;
     int value = -1;
+    if(ac != 2)
+    {
+        return 4;
+    }
 
     if(key[0] == '\0')
     {
