@@ -13,6 +13,7 @@ int main(int argc, string argv[])
 }
 void scramb(string input)
 {
+    int n = 0;
     while(input[n] != '\0')
     {
 
