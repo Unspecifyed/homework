@@ -17,9 +17,10 @@ bool checkKey(string key)
 {
     int n = 0;
     bool valid = true;
+    int value = -1;
     while(key[n] != '\0')
     {
-        
+        value = (int)key[n];
         if(n > 23)
         {
             valid = false;
