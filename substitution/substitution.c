@@ -9,11 +9,11 @@ int main(int argc, string argv[])
     int argumentCount = argc;
     string key = argv[1];
     bool valid = checkKey(string key);
-    bool badKey = true;
 
-    while(badKey)
+    while(!valid)
     {
-        
+        key = get_string(")
+
     }
 
     printf("ciphertext: ");
