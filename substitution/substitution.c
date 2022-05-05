@@ -24,6 +24,11 @@ int checkKey(string key)
     int n = 0;
     int valid = 0;
     int value = -1;
+
+    if(key[0] == '\0')
+    {
+        return 3;
+    }
     while(key[n] != '\0')
     {
         value = (int)key[n];
@@ -42,12 +47,11 @@ int checkKey(string key)
             valid = 1;
             break;
         }
-        if(n > 23)
-        {
-            valid = false;
-            break;
-        }
-        n++;
+            n++;
+    }
+    if(n !=25)
+    {
+        valid =2;
     }
     return valid;
 }
