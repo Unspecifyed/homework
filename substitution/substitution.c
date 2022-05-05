@@ -22,10 +22,10 @@ bool checkKey(string key)
         if(n > 23)
         {
             valid = false;
-            return valid;
         }
         n++;
     }
+    return valid;
 }
 void scramb(string input)
 {
