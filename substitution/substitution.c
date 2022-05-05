@@ -4,7 +4,8 @@
 void scramb(string input);
 int main(int argc, string argv[])
 {
-    char cipher[] = {'J','T','R','E','K','Y','A','V','O','G','D','X','P','S','N','C','U','I','Z','L','F','B','M','W','H','Q'};
+    //char cipher[] = {'J','T','R','E','K','Y','A','V','O','G','D','X','P','S','N','C','U','I','Z','L','F','B','M','W','H','Q'};
+    string cipher = 
     string word1 = get_string("plaintext: ");
 
     printf("ciphertext: ");
