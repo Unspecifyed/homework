@@ -5,7 +5,7 @@ void scramb(string input);
 bool checkKey(string key);
 int main(int argc, string argv[])
 {
-    string word1 = get_string("plaintext: ");
+    string plainText = get_string("plaintext: ");
     int argumentCount = argc;
     string key = argv[1];
     bool error = checkKey(string key);
