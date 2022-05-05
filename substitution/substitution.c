@@ -16,10 +16,15 @@ int main(int argc, string argv[])
 bool checkKey(string key)
 {
     int n = 0;
-    
+    bool valid = true;
     while(key[n] != '\0')
     {
-        lol
+        n++;
+        if(n > 23)
+        {
+            valid = false;
+            return valid;
+        }
     }
 }
 void scramb(string input)
