@@ -12,7 +12,7 @@ int main(int argc, string argv[])
 
     while(!valid)
     {
-        key = get_string(")
+        key = get_string("")
 
     }
 
