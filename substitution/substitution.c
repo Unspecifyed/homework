@@ -14,8 +14,8 @@ int main(int argc, string argv[])
     {
         switch(valid)
         {
-            (1)
-            
+            case 1:
+            key =
         }
 
     }
