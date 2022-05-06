@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void scramb(string input);
+string scramb(string input, string key);
 int checkKey(string key, int aCount);
 int main(int argc, string argv[])
 {
@@ -18,14 +18,15 @@ int main(int argc, string argv[])
     printf("Key must contain 26 characters.");
     return 1;
     case 3:
-    printf("Usage: ./substitution key");
+    printf("Usage: ./substitution key"); // null set
     return 1;
     case 4:
-    printf("Usage: ./substitution key");
+    printf("Usage: ./substitution key"); // more then one argument
     return 1;
     }
 
     string plainText = get_string("plaintext: ");
+    string cipherText = scramb(plainText, key);
     printf("ciphertext: ");
     return 0;
 }
@@ -69,7 +70,7 @@ int checkKey(string key, int aC)
     }
     return valid;
 }
-void scramb(string input)
+string scramb(string input, string key)
 {
     int n = 0;
     while(input[n] != '\0')
