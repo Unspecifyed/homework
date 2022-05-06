@@ -73,6 +73,8 @@ int checkKey(string key, int aC)
 string scramb(string input, string key)
 {
     int n = 0;
+    int lowerOffset = 97;
+    int upperOffset = 65;
     while(input[n] != '\0')
     {
 
