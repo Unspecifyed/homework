@@ -17,7 +17,12 @@ int main(int argc, string argv[])
     case 2:
     printf("Key must contain 26 characters.");
     return 1;
-
+    case 3:
+    printf("Usage: ./substitution key");
+    return 1;
+    case 4:
+    printf("Usage: ./substitution key");
+    return 1;
     }
 
     string plainText = get_string("plaintext: ");
