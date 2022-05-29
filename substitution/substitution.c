@@ -1,39 +1,85 @@
 #include <cs50.h>
 #include <stdio.h>
-int keySize( string s);
+bool valid(int count, string key);
+int strCount(string key);
+bool caps(char c);
+void cyper(string key, string ptext);
 int main(int argc, string argv[]) 
 {
-    const int ARUMENTNUMBER = argc;
-
-    if (ARUMENTNUMBER != 2)
-    {
-        printf("Usage: ./substitution key");
-        return 1;
-    }
+    const int ARGUMENTCOUNT = argc;
     const string KEY = argv[1];
-    const int SIZEKEY = keySize(KEY);
+    const bool VALIDKEY = valid(ARGUMENTCOUNT,KEY);
 
-    if(SIZEKEY != 26)
+    if(!VALIDKEY)
     {
         return 1;
     }
+
+    const string PLAINTEXT = get_string("plaintext: ");
+    cyper(KEY,PLAINTEXT);
 
     return 0;
 
-
 }
 
-int keySize(string s)
-{
-    int size = 0;
-    char c = s[size];
-    bool empty = (c == '\0');
 
-    while(empty)
+bool valid(int count, string key)
+{
+    bool isValid = true;
+    if(count != 2)
     {
-        size ++;
-        c = s[size];
-        empty = (c == '\0');
+        printf("Usage: ./substitution key");
+        isValid = false;
+
     }
-    return size;
+
+    if(strCount(key) !=26)
+    {
+        printf("Key must contain 26 characters.");
+        isValid = false;
+    }
+    return isValid;
+}
+
+int strCount(string key)
+{
+    int i = 0;
+    while(key[i]!='\0')
+    {
+        i ++;
+    }
+    return i;
+}
+bool caps(char c)
+{
+    bool isCaps = false;
+    if(c >64 && c<91)
+    {
+        isCaps =true;
+    }
+    return isCaps;
+}
+
+
+void cyper(string key, string ptext)
+{
+    int i = 0;
+    int cAmount = 65;
+    int lAmount = 97;
+    int pValue = 0;
+    char out = 'a';
+    while(ptext[i]!='\0')
+    {
+        if(caps(ptext[i]))
+        {
+           pValue = ptext[i] - cAmount;
+        }
+        else
+        {
+            pValue =ptext[i] - lAmount;
+        }
+        out = key[pValue];
+        printf("%c",out);
+        i++;
+    }
 }
