@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": false,
       "cwd": "/home/francis/Prog/cs50",
-      "program":"${fileDirname}/bin/${fileBasenameNoExtension}",
+      "program": "/home/francis/Prog/cs50/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
