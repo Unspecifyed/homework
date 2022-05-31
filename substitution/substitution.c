@@ -103,11 +103,12 @@ void cyper(string key, string ptext)
     }
     else
     {
-      printf("%s", out);
+      printf("%c", out);
     }
 
     i++;
   }
+  printf("\n");
 }
 char lowerChar(char c)
 {
