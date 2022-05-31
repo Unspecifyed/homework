@@ -5,11 +5,13 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
-      "args": [],
+      "args": [
+        "ZYXWVUTSRQPONMLKJIHGFEDCBA"
+      ],
       "stopAtEntry": false,
       "externalConsole": false,
       "cwd": "/home/francis/Prog/cs50",
-      "program": "/home/francis/Prog/cs50/build/Debug/outDebug",
+      "program": "${fileDirname}/bin/${fileBasenameNoExtension}",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
@@ -18,7 +20,8 @@
           "text": "-enable-pretty-printing",
           "ignoreFailures": true
         }
-      ]
+      ],
+      "preLaunchTask": "C/C++: clang build active file"
     }
   ]
 }
