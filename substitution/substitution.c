@@ -7,6 +7,7 @@ void cyper(string key, string ptext);
 char lowerChar(char c);
 char upperChar(char c);
 bool isSpace(char c);
+bool isDuplicate(string s);
 int main(int argc, string argv[])
 {
   const int ARGUMENTCOUNT = argc;
@@ -26,7 +27,6 @@ int main(int argc, string argv[])
 
 bool valid(int count, string key)
 {
-  bool isValid = true;
   if (key == NULL)
   {
     printf("Usage: ./substitution key");
@@ -36,16 +36,20 @@ bool valid(int count, string key)
   if (count != 2)
   {
     printf("Usage: ./substitution key");
-    isValid = false;
+    return false;
   }
 
   if (length != 26)
   {
     printf("Key must contain 26 characters.");
-    isValid = false;
+    return false;
+  }
+  if (isDuplicate(key))
+  {
+    return false;
   }
 
-  return isValid;
+  return true;
 }
 
 bool caps(char c)
@@ -64,9 +68,10 @@ void cyper(string key, string ptext)
   int cAmount = 65;
   int lAmount = 97;
   char out = '0';
-  while (i <= strlen(ptext))
+  char plainChar = ptext[i];
+  while (plainChar != '\0')
   {
-    char plainChar = ptext[i];
+    plainChar = ptext[i];
     bool plainCharCaps = caps(plainChar);
     int plainCharValue = 0;
     bool spaceChar = false;
@@ -130,4 +135,32 @@ bool isSpace(char c)
   {
     return false;
   }
+}
+bool isDuplicate(string s)
+{
+  int outer = 0;
+  char outerC = '!';
+  int inner = 0;
+  char innerC = '!';
+  while (s[outer] != '\0')
+  {
+    if (inner == outer)
+    {
+      inner++;
+    }
+    outerC = s[outer];
+
+    while (s[inner != '\0'])
+    {
+      innerC = s[inner];
+      if (outerC == innerC)
+      {
+        return true;
+      }
+      inner++;
+    }
+    outer++;
+  }
+
+  return false;
 }
