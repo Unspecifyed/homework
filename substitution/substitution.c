@@ -8,16 +8,16 @@ char lowerChar(char c);
 char upperChar(char c);
 bool isSpace(char c);
 bool isDuplicate(string s);
+bool isValidChars(string s);
 int main(int argc, string argv[])
 {
   const int ARGUMENTCOUNT = argc;
   const string KEY = argv[1];
-  const bool VALIDKEY = valid(ARGUMENTCOUNT, KEY);
 
-  if (!VALIDKEY)
-  {
+  if (!valid(ARGUMENTCOUNT, KEY))
     return 1;
-  }
+  if(!isValidChars(KEY))
+    return 1;
   const string PLAINTEXT = get_string("plaintext: ");
   printf("ciphertext: ");
   cyper(KEY, PLAINTEXT);
@@ -45,9 +45,7 @@ bool valid(int count, string key)
     return false;
   }
   if (isDuplicate(key))
-  {
     return false;
-  }
 
   return true;
 }
@@ -150,7 +148,7 @@ bool isDuplicate(string s)
     }
     outerC = s[outer];
 
-    while (s[inner != '\0'])
+    while (s[inner] != '\0')
     {
       innerC = s[inner];
       if (outerC == innerC)
@@ -163,4 +161,22 @@ bool isDuplicate(string s)
   }
 
   return false;
+}
+bool isValidChars(string s)
+{
+  int i = 0;
+  char iChar = '!';
+  bool statment =true;
+  while (iChar != '\0')
+  {
+    iChar = s[i];
+    if (upperChar(s[i])) i++;
+    else if( lowerChar(s[i])) i++;
+    else {
+      statment = false;
+      i++;
+      break;
+    }
+  }
+  return statment;
 }

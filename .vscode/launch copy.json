@@ -5,9 +5,7 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
-      "args": [
-        "Z!XWVUTSRQPONMLKJIHGFEDCBA"
-      ],
+      "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
       "cwd": "/home/francis/Prog/cs50",

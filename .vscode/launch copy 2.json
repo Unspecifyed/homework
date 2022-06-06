@@ -6,7 +6,7 @@
       "type": "cppdbg",
       "request": "launch",
       "args": [
-        "Z!XWVUTSRQPONMLKJIHGFEDCBA"
+        "ZYXWVUTSRQPONMLKJIHGFEDCBA"
       ],
       "stopAtEntry": false,
       "externalConsole": false,
